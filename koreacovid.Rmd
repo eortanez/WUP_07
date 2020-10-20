@@ -52,11 +52,20 @@ barchartGC(~result + Sex,data=kRdata, main = "Frequency Bar Chart")
 The graph also shows that about 62 to 65 percent of men are dead and about 35 to 38 percent of women are dead.
   
 ## Numerical results
-
-
+```{r}
+table1 <- xtabs(~result + Sex, data=kRdata)
+rowPerc(table1)
+colPerc(table1)
+```
+The result shows that about 64 men out of 100 have died of covid 19 compared to the result of 36 out of 100 women who have died . 
+his gives a ratio of about 1:3 when simplified .    
 
 ## Inferential results 
-
+```{r}
+chisq.test(table1)
+chisqtestGC(table1)
+fisher.test(table1)
+```
 
 
 
