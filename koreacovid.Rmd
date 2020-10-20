@@ -1,7 +1,7 @@
 ---
 title: "covid 19"
-author: "Dr K"
-date: "5/2/2020"
+author: "Emraida Ortanez"
+date: "10/19/2020"
 output:
   html_document: default
   pdf_document: default
@@ -38,19 +38,21 @@ with(kRdata, table(Sex, result))
 
 ## We create two bar charts - one based on frequency and the other on percent
 
-```{r}
-barchartGC(~result + Sex,data=kRdata, main ="Frequency Bar Chart")
-```
-
   
 ### this bar chart is displaying in total frequency terms our data.  Clearly there are a lot less dead people than alive people as is reflected by the sizes of the bars in the display.  
 
-
-
-
-
+```{r}
+barchartGC(~result + Sex,data=kRdata,type="percent" ,main= "Frequency Bar Chart")
+```
+```{r}
+barchartGC(~result + Sex,data=kRdata, main = "Frequency Bar Chart")
+```
+   
+ According the frequency bar chart there are more women alive than the men and the second bar shows that more men are dead than women
+The graph also shows that about 62 to 65 percent of men are dead and about 35 to 38 percent of women are dead.
   
 ## Numerical results
+
 
 
 ## Inferential results 
