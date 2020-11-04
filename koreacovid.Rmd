@@ -70,4 +70,5 @@ This is the  odds of women dying from covid 19 is 0.00054615 and the odds of men
 states that the chance of men dying from covid 19 is 2.3 than women.  
 
 ## Conclusions
-
+The odds ratio pf 2.3 to 1 means that a man dies 2.3 X as often as to a woman does. The chance of a man dying is 2.3 x greater than 
+of a woman chance of dying from Covid-19.
